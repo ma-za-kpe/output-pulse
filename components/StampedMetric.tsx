@@ -5,7 +5,9 @@ import type { LedgerEntry } from "@/lib/db";
 import { latestEntry } from "@/lib/output";
 
 export default function StampedMetric() {
-  const { items, loading, error } = useCollection<LedgerEntry>("ledger");
+  const { items, status } = useCollection<LedgerEntry>("ledger");
+  const loading = status === "loading";
+  const error = status === "error";
 
   if (loading) {
     return (

@@ -40,3 +40,10 @@ export function benchmarkGap(you: number, peers: number) {
   const pct = you === 0 ? 0 : (gap / you) * 100;
   return { gap, pct };
 }
+
+export function latestEntry<T extends { period: string; value: number }>(
+  items: T[],
+): T | null {
+  if (items.length === 0) return null;
+  return sortEntries(items)[items.length - 1];
+}

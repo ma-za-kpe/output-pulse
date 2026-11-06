@@ -5,7 +5,9 @@ import { useCollection } from "@/components/kit/useCollection";
 import type { LedgerEntry } from "@/lib/db";
 
 export default function EntrySheet() {
-  const { items, loading, error, add, remove } = useCollection<LedgerEntry>("ledger");
+  const { items, status, add } = useCollection<LedgerEntry>("ledger");
+  const loading = status === "loading";
+  const error = status === "error";
   const [metricName, setMetricName] = useState("");
   const [period, setPeriod] = useState("");
   const [value, setValue] = useState("");
@@ -49,11 +51,13 @@ export default function EntrySheet() {
           The entry could not be saved. Check the device and try again.
         </p>
       ) : (
-        <form
+        <div
           className="entry-sheet__form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            void onSave();
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              void onSave();
+            }
           }}
         >
           <label className="entry-sheet__field">
@@ -94,7 +98,7 @@ export default function EntrySheet() {
               onChange={(e) => setNote(e.target.value)}
             />
           </label>
-          <button type="submit" className="entry-sheet__save" disabled={!canSave}>
+          <button type="button" className="entry-sheet__save" disabled={!canSave} onClick={() => void onSave()}>
             Save to ledger
           </button>
           {saved && (
@@ -102,7 +106,7 @@ export default function EntrySheet() {
               Saved.
             </span>
           )}
-        </form>
+        </div>
       )}
     </section>
   );
