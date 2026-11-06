@@ -1,0 +1,100 @@
+{
+  "contracts": {
+    "task-home": {
+      "checks": [
+        "npm run build (a pinned build, no network)",
+        "python tests/site_view.py && python -m unittest discover -s tests (the frozen tests)",
+        "node tests/browser/qa.mjs (phone and desktop, axe, the quality floors)"
+      ],
+      "evaluator": {
+        "criteria": [
+          "design",
+          "originality",
+          "depth",
+          "craft",
+          "functionality"
+        ],
+        "hiddenCategories": 6,
+        "threshold": 7
+      },
+      "features": [
+        {
+          "done": "P1 logs this quarter's output metric, sees the trend against last year, and sees the gap to the peer benchmark they entered, all on their own device, in under two minutes. (on `index`, working offline)",
+          "id": "M1",
+          "title": "Output tracker with peer-benchmark gap view"
+        },
+        {
+          "done": "P1 can add a new period entry (metric name, period label, value) and delete an entry they entered in error, without losing other entries. (on `index`, working offline)",
+          "id": "M2",
+          "title": "Period entry and deletion"
+        },
+        {
+          "done": "P1 sees a simple line or bar trend of their output metric over the periods they have logged, so they can say 'we are up 8% over three quarters' or 'we are flat' in one glance. (on `index`, working offline)",
+          "id": "M3",
+          "title": "Trend view"
+        },
+        {
+          "done": "P1 enters a peer benchmark value (sourced from a published report or a peer) and sees the gap as a number and a percentage, so they can say 'we are at 42, peers are at 50, the gap is 8 or 16%.' (on `index`, working offline)",
+          "id": "M4",
+          "title": "Peer benchmark gap"
+        },
+        {
+          "done": "P1 sees a clear empty state when no entries exist ('No output entries yet. Start with this quarter.') and a visible message if IndexedDB is unavailable or quota is exceeded, so no entry is lost silently. (on `index`, working offline)",
+          "id": "M5",
+          "title": "Empty state and error handling"
+        }
+      ],
+      "task": "task-home",
+      "title": "Design direction: home page and shared style"
+    }
+  },
+  "features": [
+    {
+      "id": "M1",
+      "notes": "",
+      "outcome": "P1 logs this quarter's output metric, sees the trend against last year, and sees the gap to the peer benchmark they entered, all on their own device, in under two minutes.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Output tracker with peer-benchmark gap view"
+    },
+    {
+      "id": "M2",
+      "notes": "",
+      "outcome": "P1 can add a new period entry (metric name, period label, value) and delete an entry they entered in error, without losing other entries.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Period entry and deletion"
+    },
+    {
+      "id": "M3",
+      "notes": "",
+      "outcome": "P1 sees a simple line or bar trend of their output metric over the periods they have logged, so they can say 'we are up 8% over three quarters' or 'we are flat' in one glance.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Trend view"
+    },
+    {
+      "id": "M4",
+      "notes": "",
+      "outcome": "P1 enters a peer benchmark value (sourced from a published report or a peer) and sees the gap as a number and a percentage, so they can say 'we are at 42, peers are at 50, the gap is 8 or 16%.'",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Peer benchmark gap"
+    },
+    {
+      "id": "M5",
+      "notes": "",
+      "outcome": "P1 sees a clear empty state when no entries exist ('No output entries yet. Start with this quarter.') and a visible message if IndexedDB is unavailable or quota is exceeded, so no entry is lost silently.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Empty state and error handling"
+    }
+  ],
+  "rules": "Agents change a feature's status and notes only, with update_plan; passes is set by trusted checks once the feature's task merged on green CI and a passing evaluation.",
+  "schema": "crew.plan@1"
+}
