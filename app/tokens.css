@@ -1,0 +1,66 @@
+/* Design tokens: the design system writes this file (from brand/ and
+   docs/design/), and every colour, size, space, radius and duration the pages
+   use comes from here. The template's defaults stand until it does. */
+:root {
+  color-scheme: light;
+  --color-ink: #16181d;
+  --color-paper: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-muted: #4d5360;
+  --color-line: #d9d5cb;
+  --color-accent: #0b5cad;
+  --color-accent-ink: #ffffff;
+  --color-focus: #0b5cad;
+  --color-success: #1d6b3a;
+  --color-warning: #8a5a00;
+  --color-danger: #a8241e;
+  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --text-sm: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.8vw, 1.875rem);
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --text-3xl: clamp(2.25rem, 1.6rem + 3vw, 4.5rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --shadow-1: 0 1px 2px rgb(22 24 29 / 8%);
+  --shadow-2: 0 8px 24px rgb(22 24 29 / 12%);
+  --motion-instant: 120ms;
+  --motion-quick: 200ms;
+  --motion-base: 360ms;
+  --motion-slow: 640ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --reveal-step: 90ms;
+  --content-max: 75rem;
+  --measure: 68ch;
+  --target-min: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-ink: #eceae4;
+    --color-paper: #121419;
+    --color-surface: #1b1e25;
+    --color-muted: #b3b7c0;
+    --color-line: #343944;
+    --color-accent: #7ab4f5;
+    --color-accent-ink: #0b1020;
+    --color-focus: #7ab4f5;
+    --color-success: #7fd19b;
+    --color-warning: #f0c060;
+    --color-danger: #ff9a92;
+  }
+}
