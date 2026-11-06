@@ -1,0 +1,476 @@
+{
+  "schema": "crew.design-contrast@1",
+  "required": [
+    [
+      "ink",
+      "paper",
+      7.0
+    ],
+    [
+      "ink",
+      "surface",
+      7.0
+    ],
+    [
+      "muted",
+      "paper",
+      4.5
+    ],
+    [
+      "muted",
+      "surface",
+      4.5
+    ],
+    [
+      "accentInk",
+      "accent",
+      4.5
+    ],
+    [
+      "accent",
+      "paper",
+      4.5
+    ],
+    [
+      "success",
+      "paper",
+      4.5
+    ],
+    [
+      "warning",
+      "paper",
+      4.5
+    ],
+    [
+      "danger",
+      "paper",
+      4.5
+    ],
+    [
+      "focus",
+      "paper",
+      3.0
+    ],
+    [
+      "line",
+      "paper",
+      1.2
+    ]
+  ],
+  "pairs": [
+    {
+      "theme": "light",
+      "text": "ink",
+      "on": "paper",
+      "fg": "#182230",
+      "bg": "#f5f1e8",
+      "ratio": 14.22,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "ink",
+      "on": "surface",
+      "fg": "#182230",
+      "bg": "#fbf8f1",
+      "ratio": 15.11,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "ink",
+      "on": "accent",
+      "fg": "#182230",
+      "bg": "#b02a1e",
+      "ratio": 2.44,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "muted",
+      "on": "paper",
+      "fg": "#5a6472",
+      "bg": "#f5f1e8",
+      "ratio": 5.32,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "muted",
+      "on": "surface",
+      "fg": "#5a6472",
+      "bg": "#fbf8f1",
+      "ratio": 5.66,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "muted",
+      "on": "accent",
+      "fg": "#5a6472",
+      "bg": "#b02a1e",
+      "ratio": 1.1,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "accent",
+      "on": "paper",
+      "fg": "#b02a1e",
+      "bg": "#f5f1e8",
+      "ratio": 5.83,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "accent",
+      "on": "surface",
+      "fg": "#b02a1e",
+      "bg": "#fbf8f1",
+      "ratio": 6.2,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "accentInk",
+      "on": "paper",
+      "fg": "#f5f1e8",
+      "bg": "#f5f1e8",
+      "ratio": 1.0,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "accentInk",
+      "on": "surface",
+      "fg": "#f5f1e8",
+      "bg": "#fbf8f1",
+      "ratio": 1.06,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "accentInk",
+      "on": "accent",
+      "fg": "#f5f1e8",
+      "bg": "#b02a1e",
+      "ratio": 5.83,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "success",
+      "on": "paper",
+      "fg": "#2c5a34",
+      "bg": "#f5f1e8",
+      "ratio": 7.11,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "success",
+      "on": "surface",
+      "fg": "#2c5a34",
+      "bg": "#fbf8f1",
+      "ratio": 7.56,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "success",
+      "on": "accent",
+      "fg": "#2c5a34",
+      "bg": "#b02a1e",
+      "ratio": 1.22,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "warning",
+      "on": "paper",
+      "fg": "#8a5a12",
+      "bg": "#f5f1e8",
+      "ratio": 5.25,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "warning",
+      "on": "surface",
+      "fg": "#8a5a12",
+      "bg": "#fbf8f1",
+      "ratio": 5.57,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "warning",
+      "on": "accent",
+      "fg": "#8a5a12",
+      "bg": "#b02a1e",
+      "ratio": 1.11,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "danger",
+      "on": "paper",
+      "fg": "#a5281c",
+      "bg": "#f5f1e8",
+      "ratio": 6.38,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "danger",
+      "on": "surface",
+      "fg": "#a5281c",
+      "bg": "#fbf8f1",
+      "ratio": 6.78,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "danger",
+      "on": "accent",
+      "fg": "#a5281c",
+      "bg": "#b02a1e",
+      "ratio": 1.09,
+      "use": "never"
+    },
+    {
+      "theme": "light",
+      "text": "focus",
+      "on": "paper",
+      "fg": "#1f3a5f",
+      "bg": "#f5f1e8",
+      "ratio": 10.19,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "focus",
+      "on": "surface",
+      "fg": "#1f3a5f",
+      "bg": "#fbf8f1",
+      "ratio": 10.83,
+      "use": "body text"
+    },
+    {
+      "theme": "light",
+      "text": "focus",
+      "on": "accent",
+      "fg": "#1f3a5f",
+      "bg": "#b02a1e",
+      "ratio": 1.75,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "ink",
+      "on": "paper",
+      "fg": "#ece7db",
+      "bg": "#141a22",
+      "ratio": 14.18,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "ink",
+      "on": "surface",
+      "fg": "#ece7db",
+      "bg": "#1c242f",
+      "ratio": 12.68,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "ink",
+      "on": "accent",
+      "fg": "#ece7db",
+      "bg": "#e06a5c",
+      "ratio": 2.67,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "muted",
+      "on": "paper",
+      "fg": "#9aa3b0",
+      "bg": "#141a22",
+      "ratio": 6.86,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "muted",
+      "on": "surface",
+      "fg": "#9aa3b0",
+      "bg": "#1c242f",
+      "ratio": 6.14,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "muted",
+      "on": "accent",
+      "fg": "#9aa3b0",
+      "bg": "#e06a5c",
+      "ratio": 1.29,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "accent",
+      "on": "paper",
+      "fg": "#e06a5c",
+      "bg": "#141a22",
+      "ratio": 5.32,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "accent",
+      "on": "surface",
+      "fg": "#e06a5c",
+      "bg": "#1c242f",
+      "ratio": 4.76,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "accentInk",
+      "on": "paper",
+      "fg": "#141a22",
+      "bg": "#141a22",
+      "ratio": 1.0,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "accentInk",
+      "on": "surface",
+      "fg": "#141a22",
+      "bg": "#1c242f",
+      "ratio": 1.12,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "accentInk",
+      "on": "accent",
+      "fg": "#141a22",
+      "bg": "#e06a5c",
+      "ratio": 5.32,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "success",
+      "on": "paper",
+      "fg": "#7cc08a",
+      "bg": "#141a22",
+      "ratio": 8.13,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "success",
+      "on": "surface",
+      "fg": "#7cc08a",
+      "bg": "#1c242f",
+      "ratio": 7.27,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "success",
+      "on": "accent",
+      "fg": "#7cc08a",
+      "bg": "#e06a5c",
+      "ratio": 1.53,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "warning",
+      "on": "paper",
+      "fg": "#e0a94e",
+      "bg": "#141a22",
+      "ratio": 8.29,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "warning",
+      "on": "surface",
+      "fg": "#e0a94e",
+      "bg": "#1c242f",
+      "ratio": 7.41,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "warning",
+      "on": "accent",
+      "fg": "#e0a94e",
+      "bg": "#e06a5c",
+      "ratio": 1.56,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "danger",
+      "on": "paper",
+      "fg": "#e88a7d",
+      "bg": "#141a22",
+      "ratio": 6.97,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "danger",
+      "on": "surface",
+      "fg": "#e88a7d",
+      "bg": "#1c242f",
+      "ratio": 6.23,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "danger",
+      "on": "accent",
+      "fg": "#e88a7d",
+      "bg": "#e06a5c",
+      "ratio": 1.31,
+      "use": "never"
+    },
+    {
+      "theme": "dark",
+      "text": "focus",
+      "on": "paper",
+      "fg": "#8fb2e0",
+      "bg": "#141a22",
+      "ratio": 8.01,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "focus",
+      "on": "surface",
+      "fg": "#8fb2e0",
+      "bg": "#1c242f",
+      "ratio": 7.16,
+      "use": "body text"
+    },
+    {
+      "theme": "dark",
+      "text": "focus",
+      "on": "accent",
+      "fg": "#8fb2e0",
+      "bg": "#e06a5c",
+      "ratio": 1.51,
+      "use": "never"
+    }
+  ]
+}
